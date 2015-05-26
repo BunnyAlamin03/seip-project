@@ -1,0 +1,7 @@
+Race er last value jasse 
+ots er value jasse na
+Radio button + Text button ek shathe kivabe ka korbe?
+radio + text same name hole last er mane text er value jasse
+radio select korleo kono value jasse na 
+abar jodi radio er modhe text use na kore tahole radio er value 
+jasse

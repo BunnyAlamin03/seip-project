@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> <?php echo constant('PAGE_TITLE'); ?>  </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       
+            <section>
+                <form action="decedent.php" method="post">   
+                    <fieldset>
+                        <legend> Personal Information of DECENDENT.</legend>
+                        
+                        <table cellpadding="30" cellspacing="30" width="100%" bgcolor="#FEFEE6"> 
+                                <tr> 
+                                    <td> Last Name <br/> <input name="Last" autofocus="autofocus" type="text" size="45"  /> </td>
+                                    <td colspan="2"> First Name <br/> <input Name="First" type="text" size="45" />  </td>
+                                    <td> Middle Name <br/> <input name="Middle" type="text"size="40"  /> </td>
+                                </tr>
+                                <tr>
+                                    <td> Date of Birth <br/> <input name="DOB" type="text" size="45"  /> </td>
+                                    <td > Gender <br/> 
+                                            <select name="Gender" id="" >
+                                                    <option value="Male" selected="selected" size="30"> Male </option>
+                                                    <option value="Female"> Female </option>
+                                            </select>
+                                    </td> 
+                                    <td >Social Security Number <br/> <input type="text" size="33" name="SSN" /></td> 
+                                    <td> Facility Name <br/> <input name="Facility" type="text" size="40"  /> </td>
+                                </tr>
+			</table>
+                        
+                        <input type="submit" value="submit"/>
+                    </fieldset>
+                </form>
+           </section>
+        
+    </body>
+</html>

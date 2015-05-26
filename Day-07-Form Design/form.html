@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Appendix A-Sample US Death Certificate Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="style/css.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="main-body">
+            <div class="my-name">
+                <h1>MD. Abutaleb, ID : 100436</h1>
+                <h3>Assignment No: 04</h3>
+                <h4>Assignment Name: Creating a form</h4>
+            </div>
+            <div class="form-body">
+                <div class="header">
+                    <h1 style="text-align: center; margin: 10px;"> Appendix A-Sample US Death Certificate Form</h1>
+                    <p style="text-align: justify; padding: 20px;">The sample death reporting form included in this content profile reflects much of the data captured for the U.S. Standard Certificate of Death. However, the VRDR
+                        content profile may be modified to include and accommodate international death reporting requirements. </p>
+                </div>
+                <h2 style="text-align: center;">Death Reporting For Vital Records</h2>
+                <h3 style="margin-left: 20px;"><br/><br/>Decedent's Name (Include AKA's if any)</h3><br/>
+                <form action="process.php" method="get" class="form">
+                    <div class="form-top-box">
+                        <div class="form-col">
+                            <lable style="float: left; ">Last Name</lable><br/>
+                            <input type="text" name="last_name" id="last_name" style="float: left; width: 100%; ">
+                        </div>
+
+                        <div class="form-col">
+                            <lable style="float: left; ">First Name</lable><br/>
+                            <input type="text" name="first_name" id="first_name" style="float: left; width: 100%;">
+                        </div>
+
+                        <div class="form-col">
+                            <lable style="float: left; ">Middle Name</lable><br/>
+                            <input type="text" name="middle_name" id="middle_name" style="float: left; width: 100%">
+                        </div>
+
+                        <div class="form-col">
+                            <lable style="float: left;">Date of Birth</lable><br/>
+                            <input type="date" name="date_of_birth" id="date_of_birth" style="float: left; width: 100%">
+                        </div>
+
+                        <div class="gender" style="width: 7%;">
+                            <lable style="float: left;">Gender</lable><br/>
+                            <select style="float: left;" name="gender">
+                                <option value="Male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="both">Both</option>
+                            </select>
+                        </div>
+                        <div class="socail-sec-name">
+                            <lable style="float: right">Social Security Name</lable><br/>
+                            <input type="text" name="social_security_number" id="social_security_number" style="float: right; width: 70%;">
+                        </div>
+
+                        <div class="form-col" style="float: left;">
+                            <lable style="float: left;">Facility Name</lable><br/>
+                            <input type="text" name="facility_name" id="facility_name" style="float: left; width: 100%;">
+                        </div>
+                    </div> <!-- End decedent's name-->
+                    <br/>
+                    <div>
+                        <h3 style="margin-top: 60px;"><br/>Decent of Hispanic Origin</h3><br/>
+                    </div><hr><br/>
+                    <p>Check the box that best describes whether the decedent is Spanish / Hispanic / Latino .
+                        Check the "No" box if decedent is not Spanish / Hispanic / Latino : <br/></p>
+                    <input type="radio" name="language" value="no_spanish" checked>No, Not Spanish / Hispanic / Latino
+                    <input type="radio" name="language" value="Yes_maxican">Yes, Maxican, maxican amerian, Chicano
+                    <input type="radio" name="language" value="yes_puerto" checked>Yes, Puerto Rican 
+                    <input type="radio" name="language" value="yes_cuban">Yes, Cuban<br>
+                    <input type="radio" name="language" value="yes_other_spanish" checked> Yes, other spanish / Hispanic / Latino<br/><br/>
+                    <input type="text" name="language" style=" width: 70%; height: 20px; margin: 0% 10%;" placeholder="Enter any other language" >
+                    <br>
+                    <br>
+                    <br>
+                    <!-- end decent of hispanic-->
+                    <h3>Decedent's Race</h3><br/><hr><br/>
+                    <p><b>Check one or more races to indicate what the Decedent considered himself or herself to be: </b></p>
+                    <div>
+                        <table cellpadding="10" style="width: 100%;">
+                            <tr style="width">
+                                <td>
+                                    <input type="radio" name="race" value="r_white"> White
+                                </td>
+                                <td>
+                                    <input type="radio" name="race" value="filipino">Filipino
+                                </td>
+                                <td> 
+                                    <input type="radio" name="race" value="native_hawaiian" checked>Native Hawaiian
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 33%;">
+                                    <input type="radio" name="race" value="black" checked> Black or African American
+                                </td>
+                                <td style="width: 33%;">
+                                    <input type="radio" name="race" value="japanese" checked> Japanese
+                                </td>
+                                <td style="width: 33%;"> 
+                                    <input type="radio" name="race" value="guamanian" checked> Guamanian Or Chamorro
+                                </td>
+                            </tr>
+                            <td style="width: 33%;">
+                                <input type="radio" name="race"> American Indian or Alaska Native<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(name of the enrolled or principle trible)<br>
+                                <input type="text" name="race" style="width: 80%; margin-left: 30px;">
+                            </td><br/>
+                            <td style="width: 33%;">
+                                <input type="radio" name="race" value="korean"> Korean
+                            </td>
+                            <td style="width: 33%;"> 
+                                <input type="radio" name="race" value="samoan"> Samoan
+                            </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 33%;">
+                                    <input type="radio" name="race" value="asian_indian"> Asian Indian
+                                </td>
+                                <td style="width: 33%;">
+                                    <input type="radio" name="race" value="Vietnamese"> Vietnamese
+                                </td>
+                                <td style="width: 33%;"> 
+                                    <input type="radio" name="race">Other specific islander(specify)
+                                    <br/><input type="text" name="race" style="width: 80%; margin-left: 30px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 33%;">
+                                    <input type="radio" name="race" value="chinese"> Chinese
+                                </td>
+                                <td style="width: 33%;">
+                                    <input type="radio" name="race"> Other Asian (Specify)
+                                    <br/><input type="text" name="race" style="width: 80%; margin-left: 30px;">
+                                </td>
+                                <td style="width: 33%;"> 
+                                    <input type="radio" name="race"> Other(Specify)
+                                    <br/><input type="text" name="race" style="width: 80%; margin-left: 30px;">
+                                </td>
+                            </tr>
+                        </table>
+                    </div> <!-- end Decedent's Race -->
+                    <br/><br/><br/>
+                    <h3>Item Must be completed by Person Who pronounces or certifies Death</h3><br/><hr><br/>
+                    <div>
+                        <table cellpadding="10" width="100%;">
+                            <tr style="width: 100%;">
+                                <td width="30%;">
+                                    <lable><b>Date Pronounced Dead</b></lable><br>
+                                    <input type="date" name="date_dead" style="width: 90%;">
+                                </td>
+
+                                <td style="width: 30%;">
+                                    <lable><b>Time Pronounced Dead</b></lable><br>
+                                    <input type="time" name="time_dead" style="width: 90%;">
+                                </td>
+
+                                <td style="width: 30%;">
+                                    <lable><b>Signature of Pronounced Dead</b></lable><br>
+                                    <input type="text" name="signature_dead" style="width: 90%;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="30%;">
+                                    <lable><b><br/>License Number</b></lable><br>
+                                    <input type="text" placeholder="Enter license number" name="license_number" style="width: 90%;">
+                                </td>
+
+                                <td style="width: 30%;">
+                                    <lable><b><br/>Date Signed</b></lable><br>
+                                    <input type="text" name="date_sined" style="width: 90%;">
+                                </td>
+
+                                <td style="width: 30%;">
+                                    <lable><b><br/>Actual or presumed date of birth</b></lable><br>
+                                    <input type="date" name="actual_date_dead" style="width: 90%;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <lable><b><br/>Actual or presumed time of Dead</b></lable><br>
+                                    <input type="time" name="actual_date_dead" style="width: 90%;">
+                                </td>
+                                <td style="width: 30%;">
+                                    <lable><b><br/>Was Medical Examiner or coroner Contracted?</b></lable><br>
+                                    <input type="radio" name="examiner" value="yes">Yes
+                                    <input type="radio" name="examiner" value="no">No
+                                </td>
+                            </tr>
+                        </table>
+                    </div> <!-- End of Item must be completed-->
+                    <br><br><br/>
+                    <h3>Cause of Death(See instruction and example)</h3><br/><hr><br/><!-- Start cause of death-->
+                    <p style="text-align: justify; margin: 0px 10px;"> <b>Part 1.</b> Enter the chain of events -- Diseases, injuries,
+                        or complications,- that directly caused the death. Do not 
+                        Enter the terminal events such as Approximateinterval: 
+                        cardiac arrest, respiratory arrest, or venticular, fibrillation
+                        without showing the etiology. DO NOT ABBREVIATE. Enter only on case 
+                        on a line. Add additional lines if necessary. 
+                    </p><br><br>
+                    <div> <!-- Cause of Death start-->
+                        <table style="width: 100%;" cellpadding="10">
+                            <tr style="width: 100%;">
+                                <td style="width: 55%;">
+                                    <lable><b>A. Immediate Cause(Final disease or condition resulting in death)</b></lable>
+                                    <input type="text" name="cause_a" style="width: 90%;">
+                                </td>
+                                <td style="width: 25%;">
+                                    <lable><b>Due to (or as a consequense of):</b></lable>
+                                    <input type="text" name="due_a" style="width: 90%;">
+                                </td>
+                                <td style="width: 20%;">
+                                    <lable><b>Onset to Death :</b></lable>
+                                    <input type="text" name="onset_a" style="width: 90%;">
+                                </td>
+                            </tr>
+                            <tr style="width: 100%;">
+                                <td style="width: 55%;">
+                                    <lable><br/><b>B. Sequentially List conditions(if any, leading to the cause listed on line a.)</b></lable>
+                                    <input type="text" name="cause_b" style="width: 90%;">
+                                </td>
+                                <td style="width: 25%;">
+                                    <lable><br/><b>Due to (or as a consequense of):</b></lable>
+                                    <input type="text" name="due_b" style="width: 90%;">
+                                </td>
+                                <td style="width: 20%;">
+                                    <lable><br/><b>Onset to Death :</b></lable>
+                                    <input type="text" name="onset_b" style="width: 90%;">
+                                </td>
+                            </tr>
+                            <tr style="width: 100%;">
+                                <td style="width: 50%;">
+                                    <lable><br/><b>C. Enter the Underlying Cause,(disease or injury that initiated the events<br>
+                                            resulting in death)</b></lable>
+                                    <input type="text" name="cause_c" style="width: 90%;">
+                                </td>
+                                <td style="width: 30%;">
+                                    <lable><br/><b>Due to (or as a consequense of):</b></lable>
+                                    <input type="text" name="due_c" style="width: 90%;">
+                                </td>
+                                <td style="width: 20%;">
+                                    <lable><br/><b>Onset to Death :</b></lable>
+                                    <input type="text" name="onset_c" style="width: 90%;">
+                                </td>
+                            </tr>
+                            <tr style="width: 100%;">
+                                <td style="" colspan="2">
+                                    <lable><br/><b>D. Last</b></lable>
+                                    <input type="text" name="case_d" style="width: 90%;">
+                                </td>
+
+                                <td style="width: 20%;">
+                                    <lable><br/><b>Onset to Death :</b></lable>
+                                    <input type="text" name="onset_d" style="width: 90%;">
+                                </td>
+                            </tr>
+                        </table><br>
+                        <p><br/><b>PART 2:</b> Enter other significant conditions contributing 
+                            to death but not resulting in the underlying cause given in part 1<br/>.</p>
+                        <textarea name="message" style="width: 80%; margin-left: 10px"></textarea>
+                        <br><br><br>
+                        <table style="width:100%; margin-left: 10px;">
+                            <tr>
+                                <td style="width: 33%;">
+                                    <p>Was an Autopsy performed?</p>
+                                    <input type="radio" name="perform" value="yes">Yes
+                                    <input type="radio" name="perform" value="no">No
+                                </td>
+                                <td style="width: 33%;">
+                                    <p>Were Autopsy finding Avai <br>To Complete The 
+                                        Cause of death?</p>
+                                    <input type="radio" name="autopsy" value="yes">Yes
+                                    <input type="radio" name="autopsy" value="no">No
+                                </td>
+                                <td style="width: 33%;">
+                                    <p>Did tobacco Use contribute To Death?</p>
+                                    <input type="radio" name="tobacco" value="yes">Yes
+                                    <input type="radio" name="tobacco" value="probably">Probably<br>
+                                    <input type="radio" name="tobacco" value="no">No
+                                    <input type="radio" name="tobacco" value="unknown">Unknown
+                                </td>
+                            </tr>
+                        </table>
+                    </div><!-- Cause of Death end-->
+                    <br>
+                    <br>
+                    <br>
+                    <br/>
+                    <div> <!--Female start -->
+                        <h3>If Female</h3><br/><hr><br/>
+                        <input type="radio" name="if_female" value="not_pregnant" >
+                        Not pregnant within past year
+                        <input type="radio" name="if_female" value="pregnant" style="margin-left: 20px;">
+                        Pregnant at time of death
+                        <input type="radio" name="if_female" value="pregnant_within_42_days" style="margin-left: 20px;">
+                        Not pregnant, but pregnant within 42 days of death
+                        <br>
+                        <input type="radio" name="if_female" value="not_pregnant">
+                        Not pregnant, but pregnant within 43 days to 1 year before death 
+                        <input type="radio" name="if_female" value="unknown_pregnant" style="margin-left: 20px;">
+                        Unknown if pregnant within the past year 
+
+                    </div> <!--Female end -->
+                    <br>
+                    <br>
+                    <br/>
+                    <h3>Manner of Death</h3><br/><hr><br/><!--Manner of death start -->
+                    <input type="radio" name="manner" value="natural">Natural
+                    <input type="radio" name="manner" value="homicide">Homicide
+                    <input type="radio" name="manner" value="accident">Accident
+                    <input type="radio" name="manner" value="pending_investigation">Pending Investigation
+                    <input type="radio" name="manner" value="suicide">Suicide
+                    <input type="radio" name="manner" value="not_determined">Could not be determined
+                    <!--Manner of death end -->
+                    <br>
+                    <br>
+                    <br>
+                    <h3>Injury<br/></h3><br/><!--Injury start -->
+                    <hr><br/>
+                    <table width="100%;">
+                        <tr>
+                            <td>
+                                <lable><b>Date of Injury</b></lable><br>
+                                <input type="date" name="date_of_injury">
+                            </td>
+                            <td><lable><b>Time of Injury</b></lable><br>
+                                <input type="time" name="time_of_injury">
+                            </td>
+                            <td><lable><b>Place of Injury</b></lable><br>
+                                <input type="text" name="place_of_injury">
+                            </td>
+                            <td><lable><b>Injury at work?</b></lable><br>
+                                <input type="radio" name="injury_at_work" value="yes">Yes
+                                <input type="radio" name="injury_at_work" value="no">No
+
+                            </td>
+                        </tr>
+                    </table><!-- Injury end -->
+                    <br>
+                    <br>
+                    <br/>
+                    <div><!-- Injury location start -->
+                        <h3>Location of Injury</h3><br/><hr><br/>
+                        <table width="100%;">
+                            <tr>
+                                <td style="width: 50%;">
+                                    <lable>State<br></lable>
+                                    <input type="text" name="injury_state" style="width: 100%;">
+                                </td>
+                                <td style="width: 48%;">
+                                    <lable> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        City Or Town<br></lable>
+                                    <input type="text" name="injury_city" style="width: 100%; margin-left: 50px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <lable><br><br>Street and number<br></lable>
+                                    <input type="text" name="injury_street">
+                                </td>
+                                <td>
+                                    <lable>Apartment No:<br></lable>
+                                    <input type="text" name="injury_apartment">
+                                </td>
+                                <td>
+                                    <lable>Zip Code<br></lable>
+                                    <input type="text" name="injury_zip">
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div><!-- Injury location end -->
+                    <br>
+                    <br>
+                    <br/>
+                    <h3>Describe How Injury Ocurred </h3><br/>
+                    <textarea name="describe_of_injury" style="width:80%;"></textarea>
+                    <br><br><br/><br/>
+                    <h3>IT Transportation Injury</h3><br/><hr><br/><br/>
+                    <p><b>Specify :</b></p><br/>
+                    <table width="100%;">
+                        <tr>
+                            <td>
+                                <input type="radio" name="transport" value="driver" >Driver
+                                <input type="radio" name="transport" value="passenger" style="margin-left: 20px;">Passenger 
+                                <input type="radio" name="transport" value="pedestrian" style="margin-left: 20px;">Pedestrian
+                                <input type="radio" name="transport" value="" style="margin-left: 20px;">Other(Specify):
+                                <input type="text" name="other_transport" style="width: 40%; margin-left: 20px">
+
+                            </td>
+                        </tr>
+                    </table><!-- IT Transportation injury end -->
+                    <br>
+                    <br>
+                    <br/>
+                    <br/>
+                    <h3>Certifier</h3><br/>
+                    <hr>
+                    <br>
+                    <br/>
+                    <b>Check Only One:</b><br/><br/>
+                    <input type="radio" name="certify" value="physician">
+                    Certifying Physician - To the best of my knowledge, death occur, 
+                    due to the cause's and manner stated<br>
+                    <br/><input type="radio" name="certify" value="pronouncing">
+                    Pronouncing and Certifying Physician - To the best of my knowledge 
+                    death occur at the time, date and place, and due to the cause(s) and manner
+                    stated<br>
+                    <br/><input type="radio" name="certify" value="coroner">
+                    Medical Examiner or Coroner - On the bais of examination and/or investigation
+                    ,in my option, death occur at the time, date, and place, and due to the 
+                    cause(s) and manner stated.<br/>
+                    <br/><b>Signature of Certifier:</b><br/>
+                    <br/><input type="text" name="soc" style="width: 50%;">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <h3>Person Completing Cause of Death<br/></h3><br/>
+
+                    <hr>
+                    <table width="100%;"> <!--Start Person completing-->
+                        <tr>
+                            <td>
+                                <lable><b>Name</b></lable><br/>
+                                <input type="text" name="p_name" style="width: 80%;">
+                            </td>
+                            <td>
+                                <lable><b>Address</b></lable><br/>
+                                <input type="text" name="p_address" style="width: 80%;">
+                            </td>
+                            <td>
+                                <lable><b>Zip Code</b></lable><br/>
+                                <input type="text" name="p_zip" style="width: 80%;">
+                            </td>
+
+                        </tr><br/>
+                    </table>
+                    <table width="100%;">
+                        <br/><br/><hr/>
+                        <tr>
+                            <td>
+                                <lable><b>Title Of Certifier </b></lable><br/>
+                                <input type="text" name="p_title" style="width: 80%;">
+                            </td>
+                            <td>
+                                <lable><b>License Number</b></lable><br/>
+                                <input type="text" name="p_license" style="width: 80%;">
+                            </td>
+                            <td>
+                                <lable><b>Date Certified</b></lable><br/>
+                                <input type="date" name="p_date" style="width: 80%;">
+                            </td>
+                        <br/>
+                        </tr>
+                    </table><!--End Person completing-->
+                    <br/><br/>
+                    <hr>
+                    <br/>
+                    <input type="submit" name="Submit" value="Send All Information" 
+
+                           style="height: 50px; 
+                           width: 200px; 
+                           text-align: center; 
+                           margin: 0% 40%;
+                           ">
+                    <table width="100%;">
+                        <tr>
+                            <td>Rev. 1.1 -2013-09-13<br>
+                                Template Rev. 10.3
+                            </td>
+                            <td style="text-align:right;">
+                                Copyright &COPY;2013; IHE International, Inc
+                            </td>
+                        </tr>
+                    </table>
+                    <br/><br/>
+
+                </form> 
+
+            </div>
+        </div>
+
+    </body>
+</html>
