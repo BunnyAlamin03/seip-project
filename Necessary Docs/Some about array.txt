@@ -1,0 +1,41 @@
+?????? ???? ??????? ( ???? ?? ????? ???? ):
+An array is a special variable, which can hold more than one value at a time.
+In PHP, the array() function is used to create an array - like:
+array();
+An array stores multiple values in one single variable:
+For an example:
+
+============================
+<?php
+$cellphones = array("Samsung", "iPhone", "Nokia", "HTC");
+echo "I like " . $cellphones[0] . "," . $cellphones[2] . " and " . $cellphones[4], ".";
+?>
+
+Output: I like Samsung, iPhone and HTC. 
+==================================
+
+<> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <>
+Indexed Arrays: Index Always Starts at 0
+There are two ways to create indexed arrays.
+1) The index can be assigned automatically, like this:
+$cellphones = array("Samsung",HTC,iPhone);
+2)The index can be assigned manually:
+$cellphones[0] = "Samsung";
+$cellphones[1] = "HTC";
+$cellphones[2] = "iPhone";
+-----------------------------
+Associative Arrays: Associative arrays are the arrays which use names keys that you assigned to them.
+There are two ways to create associative array:
+1) $SEIP = array("Partha"=>"100120", "Rayhan"=>"100773", "Sanzid"=>"100302");
+2) $SEIP['Partha'] = "100120";
+$SEIP['Rayhan'] = "100773";
+$SEIP['Sanzid'] = "100302";
+An example:
+<?php
+$SEIP['Partha'] = "100120";
+$SEIP['Rayhan'] = "100773";
+$SEIP['Sanzid'] = "100302";
+echo "Id number of Rayhan is " . $SEIP['Rayhan'];
+?>
+Output: Id number of Rayhan is 100773
+??? ????? ???? ?????? ???????? ???? ???? ?????, but after asking you to write about Array, you couldn't write down precisely. In that case, this post may help you ..... smile emoticon

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CRUD Using Session By Md. Abutaleb </title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Learn how to work CRUD Using Session">
+	<meta name="keywords" content=" CRUD Using session, add data to session,
+              how to remove data from session, how to delete session, 
+              how crud work with session, php session tutorial">
+        <meta name="author" content="Md. Abutaleb ">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="style/css.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="main-body">
+            <div class="my-name">
+                <h1>MD. Abutaleb, ID : 100436</h1>
+                <h3>Assignment No: 04</h3>
+                <h4>Assignment Name: Creating a form</h4>
+            </div>
+            <div class="form-body">
+                <div class="header">
+                    <h1 style="text-align: center; margin: 10px;"> Appendix A-Sample US Death Certificate Form</h1>
+                    <p style="text-align: justify; padding: 20px;">The sample death reporting form included in this content profile reflects much of the data captured for the U.S. Standard Certificate of Death. However, the VRDR
+                        content profile may be modified to include and accommodate international death reporting requirements. </p>
+                </div>
+                <h2 style="text-align: center;">Death Reporting For Vital Records</h2>
+                <h3 style="margin-left: 20px;"><br/><br/>Decedent's Name (Include AKA's if any)</h3><br/>
+                <form action="process.php" method="POST" class="form">
+                    <div class="form-top-box">
+                        <div class="form-col">
+                            <lable style="float: left; ">Last Name</lable><br/>
+                            <input type="text" name="last_name" id="last_name" style="float: left; width: 100%; ">
+                        </div>
+
+                        <div class="form-col">
+                            <lable style="float: left; ">First Name</lable><br/>
+                            <input type="text" name="first_name" id="first_name" style="float: left; width: 100%;">
+                        </div>
+
+                        <div class="form-col">
+                            <lable style="float: left; ">Middle Name</lable><br/>
+                            <input type="text" name="middle_name" id="middle_name" style="float: left; width: 100%">
+                        </div>
+
+                        <div class="form-col">
+                            <lable style="float: left;">Date of Birth</lable><br/>
+                            <input type="text" name="date_of_birth" id="date_of_birth" style="float: left; width: 100%">
+                        </div>
+
+                        <div class="gender" style="width: 7%;">
+                            <lable style="float: left;">Gender</lable><br/>
+                            <select style="float: left;" name="gender">
+                                <option value="Male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="both">Both</option>
+                            </select>
+                        </div>
+                        <div class="socail-sec-name">
+                            <lable style="float: right">Social Security Name</lable><br/>
+                            <input type="text" name="social_security_number" id="social_security_number" style="float: right; width: 70%;">
+                        </div>
+
+                        <div class="form-col" style="float: left;">
+                            <lable style="float: left;">Facility Name</lable><br/>
+                            <input type="text" name="facility_name" id="facility_name" style="float: left; width: 100%;">
+                        </div>
+                        
+                    </div> <!-- End decedent's name-->
+                    <div align="center">
+                        <input type="submit" value="Save and Continue">
+                    </div>
+                    
+                </form> 
+
+            </div>
+        </div>
+        <div class="footer">
+          Copyright  &copy; Md Abutaleb ( Sumon Mahmud ) 
+        </div>
+    </body>
+</html>
